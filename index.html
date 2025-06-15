@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contant">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">              
+                <P>Software developer </P>
+                <h1>Hi, I'm <span>Rahul</span><br>Kumar from India</h1>
+
+            </div>
+        </div>
+    </div>
+    <!----about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/about-photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="about-text">Hi, I'm Rahul — a Java Developer, tech enthusiast, and lifelong learner who is passionate about coding, problem-solving, and continuous improvement. I specialize in Java-based backend development and love building robust, real-world applications. Whether it's exploring new technologies, developing full-stack solutions, or sharpening my skills through Data Structures and Algorithms (DSA), I’m always driven to grow. I believe in writing clean, efficient, and maintainable code, and my goal is to create tech that not only works but genuinely makes a difference</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+ 
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Core Java, OOPs Concept, HTML, CSS, JavaScript,Tailwind CSS</li>
+                            <li><span>Backend Development</span><br>Java (Collections, Exception Handling, Multi-threading)</li>
+                            <li><span>Tool & Technologies</span><br>IntelliJ IDEA, Git, GitHub, VS Code, Premiere pro, Canva</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2024-present</span><br>Java Developer </li>
+                            <li><span>2023 - 2024</span><br>Frontend-Developer</li>
+                            <li><span>2022 - 2024</span><br>Video Editing </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2022 - present</span><br>Btech (CSE) at Punjab Technical University</li>
+                            <li><span>2020</span><br>Class 12th L.N.D collage,Motihari Bihar</li>
+                            <li><span>2018</span><br>Class 10th H.M.S Madhubhan</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!----My services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend development</h2>
+                    <p>Providing frontend development services with a focus on responsive design, smooth animations, and clean UI using HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="https://github.com/Rahulgupta7070">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Backend Development</h2>
+                    <p>Providing backend development services in Java with expertise in Collections, Exception Handling,
+                         and Multi-threading for building robust and scalable systems.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>Offering premium video editing and Canva Pro design services for social media, branding, and content creation.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+             
+
+             
+                <!-- <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Inventore provident ad 
+                        voluptatibus, tenetur magni libero nobis quis
+                        voluptas iusto eaque blanditiis itaque! Omnis,
+                        unde ipsam atque
+                        deleniti quidem odit animi?
+                    </p>
+                    <a href="#">Learn more</a>
+                </div> -->
+
+                <!-- <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2></h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Inventore provident ad 
+                        voluptatibus, tenetur magni libero nobis quis
+                        voluptas iusto eaque blanditiis itaque! Omnis,
+                        unde ipsam atque
+                        deleniti quidem odit animi?
+                    </p>
+                    <a href="#">Learn more</a>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!----------Portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./image/car Showroom .png">
+                <div class="layer">
+                    <h3>Car Showroom Management System</h3>
+                    <p>Built a Java console app for car showroom management using core OOP principles
+                    </p>
+                    <a href="https://github.com/Rahulgupta7070/Car-Showrooms-Management-System/tree/main/src"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./image/hospital.png">
+                <div class="layer">
+                    <h3>hospital Management System</h3>
+                    <p>Built a Java console app for hospital management using OOP and JDBC with MySQL.
+                    </p>
+                    <a href="https://github.com/Rahulgupta7070/Hospital-Management-System/tree/main/src/HospitalManagementSystem"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./image/rweDqk6i_400x400.jpg">
+                <div class="layer">
+                    <h3>Obys Agency</h3>
+                    <p>Cloned Obys Agency site using HTML, CSS, JS with GSAP and Locomotive Scroll for smooth animations and effects.
+                    </p>
+                    <a href="https://github.com/Rahulgupta7070/Obys-Agency-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./image/simongame.jpg">
+                <div class="layer">
+                    <h3>Simon Says Game</h3>
+                    <p>Created a Simon Says game using HTML, CSS, and JavaScript with interactive UI and game logic.
+                    </p>
+                    <a href="https://github.com/Rahulgupta7070/Simon-Says-Game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Rahulgupta7070" class="btn"> See more</a>
+    </div>
+</div>
+
+<!---------contact-->
+
+<div id="contant">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>krrahul87099@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7070629414</p>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/u/Rahulll_1_29/"><i class="fa-solid fa-laptop-code"></i></a>
+                    <a href="https://www.linkedin.com/in/kumarrahulgupta/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="./Rahul resume.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    
+                    <button type="Submit" class="btn btn2 btn3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   <div class="copyright">
+    <p>Copyright @ Rahul.Made with <i class="fa-solid fa-heart"></i></p>
+   </div>
+</div>
+  
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
