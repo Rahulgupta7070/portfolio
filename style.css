@@ -577,23 +577,44 @@ nav .fa-solid{
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right{
+   .contact-left, .contact-right{
         flex-basis:100%;
+        margin-top:20px;
     }
+
+    .contact-right form{
+        width:100%;
+        padding: 0 10px;
+    }
+
+    form input,
+    form textarea{
+        width:100%;
+        font-size:16px;
+        padding:12px;
+        margin:10px 0;
+    }
+
+    .btn.btn2.btn3{
+        width:100%;
+        font-size:16px;
+        padding:12px 0;
+    }
+
     .social-icon a{ 
-        margin-right:20px;
-        
+        margin-right:15px;
     }
 
     .copyright{
         width:100%;
         text-align:center;
         padding:25px 0;
-        
         font-weight:300;
-        
     }
-    .btn{
+
+
+
+    .headerBtn{
        color:black;
        font-weight:700;
     }
