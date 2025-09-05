@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="header">
@@ -20,8 +20,11 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contant">Contact</a></li>
                     <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                    
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+               
+ 
             </nav>
 
 
@@ -252,6 +255,8 @@ I believe in writing clean, efficient, and maintainable code, and my goal is to 
    </div>
 </div>
 <!--ye java script form ko handle kr rha hai sheet me bhej rha hai data ko-->
+
+<!--
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbx1zVLSkhK3qOXEq3UkKuyANKP9K_hZud1TscoxGB6b5P950vcoaj1iX4jPVlSQzGzU/exec'
   const form = document.forms['submit-to-google-sheet']//yaha jo name hai whi form ka name denge 
@@ -268,7 +273,38 @@ I believe in writing clean, efficient, and maintainable code, and my goal is to 
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script>-->
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx1zVLSkhK3qOXEq3UkKuyANKP9K_hZud1TscoxGB6b5P950vcoaj1iX4jPVlSQzGzU/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // Email validation
+    const email = form.Email.value;
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; // simple email regex
+
+    if(!emailPattern.test(email)){
+        msg.style.color = 'red';
+        msg.innerHTML = "Please enter a valid email!";
+        return; // stop submission
+    }
+
+    // Agar valid ho, Google Sheet me bhejo
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.style.color = 'green';
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(() => msg.innerHTML = "", 500);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+});
 </script>
+
 
 
 
