@@ -593,6 +593,10 @@ nav .fa-solid{
         font-weight:300;
         
     }
+    .btn{
+       color:black;
+       font-weight:700;
+    }
     
 
     
@@ -602,6 +606,7 @@ nav .fa-solid{
     color:#61b752;
     margin-top:-40px;
     display:block;
+    margin-left:10px;
 }
 
 
