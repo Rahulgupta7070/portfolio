@@ -123,26 +123,37 @@ nav ul li a:hover::after{
     font-size:90px;
 }
 
-/* Typing Effect */
 .typing {
   display: inline-block;
-  border-right: 3px solid #ff004f; /* blinking cursor */
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 5s steps(20) infinite, blink 0.7s step-end infinite;
+  border-right: 3px solid;
+  padding-right: 5px;
+  animation: typing 3s steps(17) infinite, blink 0.7s step-end infinite, colorChange 3s infinite;
 }
 
 /* Typing Animation */
 @keyframes typing {
-  0% { width: 0 }
-  50% { width: 23% }
-  100% { width: 0 }
+  0% { width: 0ch; }
+  50% { width: 17ch; }
+  100% { width: 0ch; }
 }
 
-/* Cursor Blinking */
+
 @keyframes blink {
-  50% { border-color: transparent }
+  50% { border-color: transparent; }
 }
+
+
+@keyframes colorChange {
+  0% { color: #ff004f; }
+  25% { color: #00ff4f; }
+  50% { color: #4f00ff; }
+  75% { color: #ffaa00; }
+  100% { color: #ff004f; }
+}
+
+
 
 
 
