@@ -84,6 +84,29 @@ nav ul li a:hover::after{
     font-size:90px;
 }
 
+/* Typing Effect */
+.typing {
+  display: inline-block;
+  border-right: 3px solid #ff004f; /* blinking cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 5s steps(20) infinite, blink 0.7s step-end infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 23% }
+  100% { width: 0 }
+}
+
+/* Cursor Blinking */
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+
+
 /*------about----*/
 
 #about{
@@ -522,3 +545,11 @@ nav .fa-solid{
 
     
 }
+
+#msg{
+    color:#61b752;
+    margin-top:-40px;
+    display:block;
+}
+
+
